@@ -1,0 +1,32 @@
+body {
+    margin-top : 15%;
+    margin-left: 15%;
+    margin-right: 20%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size : 2em;
+}
+
+p, label {
+    letter-spacing: 1px;
+    text-align: justify;
+    color: black;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+#guess-submit {
+    padding-top: 5px;
+    font-size : 1.1em;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    cursor : pointer;
+}
+
+button {
+    padding-top: 5px;
+    font-size : 1.1em;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    cursor : pointer;
+}
