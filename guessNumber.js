@@ -88,14 +88,14 @@ function setGameOver() {
 
 //12. Relancer le jeu
 function resetGame() {
+    resetButton.parentNode.removeChild(resetButton);  //->retourne l'erreur "resetButton.parentNode est null"
+
+    // This method kills the resetbutton parent
     guessCount = 1;
     let resetParas = document.querySelectorAll(".resultParas p");
     for (let i = 0 ; i < resetParas.length ; i++) {
         resetParas[i].textContent = '';
     }
-    lastResult.parentNode.removeChild(resetButton); // -> retourne l'erreur "node was not found"
-    //resetButton.parentNode.removeChild(resetButton);  ->retourne l'erreur "resetButton.parentNode est null"
-    //console.log(resetButton.textContent); -> "Relancer le jeu" alors qu'il ne devrait rien apparaître.
     guessField.disabled = false;
     guessSubmit.disabled = false;
     guessField.value = '';
